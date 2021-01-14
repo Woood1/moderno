@@ -2,7 +2,15 @@
 @import 'global';
 @import 'fonts';
 
-
+.header__circle{
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background-color: #f5f5f5;
+	& + .header__circle{
+		margin-left: 15px;
+	}
+}
 // start header
 
 .header__top-inner{
