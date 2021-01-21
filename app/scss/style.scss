@@ -1276,11 +1276,12 @@ button.icon-unsarted{
 }
 .product__item{
 	&.list{
-		max-width: 100%;
+		max-width: 870px;
+		width: 100%;
 		.product__item-img{
 			width: 240px;
 			float: left;
-			min-height: 100px;
+			min-height: 180px;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -1973,6 +1974,13 @@ button.icon-unsarted{
 
 
 // end settings
+
+
+.icon-th-list{
+	& +.list{
+		display: block;
+	}
+}
 
 
 
