@@ -1,11 +1,16 @@
 $(function(){
 
 
-	$(".rate-star").rateYo({
-		rating: 5,
-		readOnly: true,
-		starWidth: "12px"
+	$(function() {
+		$(".rate-star").rateYo({
+			rating: 5,
+			readOnly: true,
+			starWidth: "12px"
+		});
 	});
+
+
+
 
 	$(".product-slider__inner").slick({
 		dots: true,
