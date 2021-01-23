@@ -5,7 +5,7 @@ html{
 *::before,
 *::after{
 	border-style: inherit;
-
+	box-sizing: border-box;
 }
 * {
 	border: none;
