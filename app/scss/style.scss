@@ -1129,6 +1129,7 @@
 	.product__item-info {
 		padding: 0;
 		min-height: 0;
+		display: flex;
 	}
 	.product__item-title {
 		font-size: 16px;
@@ -1152,6 +1153,9 @@
 		padding-bottom: 30px;
 		margin-bottom: 30px;
 		border-bottom: 1px solid #dde3e8;
+	}
+	.product__item-star{
+		margin-left: 50px;
 	}
 }
 .aside__product-items {
@@ -1297,6 +1301,7 @@ button.icon-unsarted{
 }
 
 
+
 .pagination__list {
 	li{
 		display: inline-block;
@@ -1307,7 +1312,7 @@ button.icon-unsarted{
 
 	a,
 	span{
-		box-shadow: 0px 1px 2px 8px rgba(205, 214, 222, 0.75);
+		box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
 		width: 43px;
 		height: 38px;
 		display: flex;
@@ -1323,6 +1328,10 @@ button.icon-unsarted{
 		}
 	}
 }
+
+  
+
+
 .product__item-text {
 	display: none;
 }
