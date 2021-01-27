@@ -5,11 +5,15 @@ html{
 *::before,
 *::after{
 	border-style: inherit;
-	box-sizing: border-box;
+	outline: none;
 }
 * {
 	border: none;
 }
+
+
+
+
 button:active, button:focus {
 	outline: none;
 }
@@ -35,9 +39,12 @@ body{
 	overflow-x: hidden;
 	background-color: #f4f6f5;
 }
+.footer{
+	flex: 0 0 auto;
+}
 .container{
 	max-width: 1200px;
-	padding: 0 30px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 .container-fluid{
@@ -69,4 +76,36 @@ body{
 		color: $green;
 		font-size: 14px;
 	}
+}
+
+.breadcrumbs{
+	&__inner{
+		padding: 45px 0 40px;
+		overflow: hidden;
+		width: 1200px;
+	}
+	&__list{
+		li{
+			display: inline-block;
+			position: relative;
+			& + li{
+				padding-left: 24px;
+				&::before{
+					content: '-';
+					position: absolute;
+					left: 8px;
+					color: $green;
+				}
+			}
+			&:last-child{
+				a,
+				span{
+					color: $bg;
+				}
+			}
+		}
+	}
+}
+#modal{
+	display: none;
 }
